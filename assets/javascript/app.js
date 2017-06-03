@@ -11,7 +11,8 @@ var guess = 0;
 var time = 15;
 // below q varible that tracks how many question have been created
 // var q = 0;
-
+var yesGif = ["assets/images/yes1.gif","assets/images/yes2.gif","assets/images/yes3.gif","assets/images/yes4.gif","assets/images/yes.gif"]
+var noGif = ["assets/images/no1.gif","assets/images/no2.gif","assets/images/no3.gif","assets/images/no4.gif","assets/images/no5.gif"]
 
 $(document).ready(function() {
 // beow number of questions -1 
@@ -64,6 +65,7 @@ var interval1;
 // below: function checks if the question is answsered correctly and dysplayes correct page
 	function check () {
 		clearInterval(interval1);
+		var random = Math.floor(Math.random()*5)
 		
 			
 		if(((x == 0 ) && (guess == 1)) || ((x ==1 ) && (guess == 1)) || ((x == 2) && (guess == 0)) || ((x ==3 ) && (guess == 3)) || ((x ==4 ) && (guess == 2))) {
@@ -71,6 +73,8 @@ var interval1;
 			correct++;
 			$("#master").hide();
 			$("#correct").show();
+			$("#yes").attr("src", yesGif[random]);
+
 			
 		}
 		else {
@@ -78,6 +82,7 @@ var interval1;
 			incorrect++;
 			$("#master").hide();
 			$("#wrong").show();
+			$("#no").attr("src", noGif[random]);
 			
 		}
 		if (questions.length >0) {		
@@ -107,7 +112,7 @@ var interval1;
 	})
 
 	
-
+// below: timing functions 
 	function timeReset () {
 		time = 15;
 		$("#time").html("00:15");
@@ -137,19 +142,13 @@ var interval1;
 		}
 		return "time left:  00:" + seconds;
 	}
-	
+
+// below: on click function that reloads the page to show the initial page	
 	$("#newGame").click(function(){
 		console.log("new");
 		window.location.reload();
 	})
 
 	
-// 1.)create a timer that start with 30 seconds
-// 2.)take a second off every second and update time
-// 3.)when time equals 0 show the page for wrong answers and 
-// add one to wrong counter
-// if user clicks something cancel the timer 
-// 4.)everytime a new question is loaded set time to 30 sec
-// 5.) leave the displayed win/loose page for 5sec then go to the next question;
 
 })

@@ -22,3 +22,9 @@ h2:hover {
 p {
 	font-size: 24px;
 }
+img {
+	margin-left: 80px;
+	margin-top: 50px;
+	width:250px;
+	height: auto;
+}
