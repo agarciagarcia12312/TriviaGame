@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Trivial Game</title>
+	<!-- Added link to the jQuery Library -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<!-- below: link to javascript file -->
+  	<script type="text/javascript" src="assets/javascript/app.js" ></script>
+  	<!-- below link to css file -->
+  	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div id="initial">
+		<h1> Random Trivia Game</h1>
+		<h4>Answer the following questions correctly to win!</h4>
+		<button id="new">click to Start</button>
+	</div>
+	<div id="master" style="display: none;">
+		
+		<h1 id="question">question</h1>
+		<hr>
+		<h2 id="option1"></h2>
+		<h2 id="option2"></h2>
+		<h2 id="option3"></h2>
+		<h2 id="option4"></h2>
+		<hr>
+		<h3 id="time"></h3>
+	</div>
+	
+	<div id="wrong" style="display: none;">
+		<h1>Your answer......is......not correct</h1>
+		<hr>
+		
+	</div>
+	<div id="correct" style="display: none;">
+		<h1> you got it!!!</h1>
+		<hr>
+		
+	</div>
+	<div id="last" style="display: none;">
+		<h1> Your score is.....</h1>
+		<hr>
+		<div id = "data"></div>
+
+
+		<button id= "newGame">Main menu</button>
+		
+	</div>
+
+
+</body>
+</html>
