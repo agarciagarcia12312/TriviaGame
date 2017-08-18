@@ -3,7 +3,7 @@ body {
 	background-size: cover;
 	background-opacity: .6;
 }
-#initial, #master, #wrong, #correct, #last {
+/*#initial, #master, #wrong, #correct, #last {
 	position: absolute;
 	left: 30%;
 	top: 20%;
@@ -11,20 +11,46 @@ body {
 	height: 350px;
 	opacity: 1;
 	
+}*/
+#all {
+	/*background-color: white;*/
+	background-image: url("http://worshiphousemedia.s3.amazonaws.com/images/main/s/mo/pow/ss/familytrivianightblank.jpg");
+	background-size: 100%;
+	width: 50%;
+	height: 70%;
+	position: fixed;
+	left: 25%;
+	top:15%;
+	border: 3px black solid;
+	border-radius: 10px;
+	text-align: center;
+
 }
 h2:hover {
-	font-size: 35px;
+	background-color: red;
+	font-size: 40px;
 }
-#data {
-	width:150px;
-	margin-left: 150
+#bottom {
+	width: 100%;
+	position: absolute;
+	bottom: 2%;
+
+}
+h1  {
+	font-size: 40px;
+}
+h3 {
+	font-size: 22px;
 }
 p {
-	font-size: 24px;
+	font-size: 30px;
 }
+
 img {
-	margin-left: 80px;
-	margin-top: 50px;
-	width:250px;
+	/*margin-left: 80px;*/
+	margin-top: 25px;
+	width:400px;
 	height: auto;
+	border: 2px red solid;
+	border-radius: 10px;
 }

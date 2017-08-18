@@ -11,47 +11,50 @@
   	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<div id="initial">
-		<h1> Random Trivia Game</h1>
-		<h4>Answer the following questions correctly to win!</h4>
-		<button id="new">click to Start</button>
+	<div id="all">
+			<div id="initial">
+				<h1> Random Trivia Game</h1>
+				<h4>Answer the following questions correctly to win!</h4>
+				<button id="new">click to Start</button>
+			</div>
+			<div id="master" style="display: none;">
+				
+				<h1 id="question">question</h1>
+				<hr>
+				<h2 id="option1"></h2>
+				<h2 id="option2"></h2>
+				<h2 id="option3"></h2>
+				<h2 id="option4"></h2>
+				<div id="bottom">
+					<hr>
+					<h3 id="time"></h3>
+				</div>	
+			</div>
+			
+			<div id="wrong" style="display: none;">
+				<h1>Your answer......is......not correct</h1>
+				<hr>
+				<img id="no" src="assets/images/no1.gif">
+				
+			</div>
+			<div id="correct" style="display: none;">
+				<h1> you got it!!!</h1>
+				<hr>
+				<img  id="yes" src="assets/images/yes1.gif">
+
+
+				
+			</div>
+			<div id="last" style="display: none;">
+				<h1> Your score is.....</h1>
+				<hr>
+				<div id = "data"></div>
+
+
+				<button id= "newGame">Main menu</button>
+				
+			</div>
+
 	</div>
-	<div id="master" style="display: none;">
-		
-		<h1 id="question">question</h1>
-		<hr>
-		<h2 id="option1"></h2>
-		<h2 id="option2"></h2>
-		<h2 id="option3"></h2>
-		<h2 id="option4"></h2>
-		<hr>
-		<h3 id="time"></h3>
-	</div>
-	
-	<div id="wrong" style="display: none;">
-		<h1>Your answer......is......not correct</h1>
-		<hr>
-		<img id="no" src="assets/images/no1.gif">
-		
-	</div>
-	<div id="correct" style="display: none;">
-		<h1> you got it!!!</h1>
-		<hr>
-		<img  id="yes" src="assets/images/yes1.gif">
-
-
-		
-	</div>
-	<div id="last" style="display: none;">
-		<h1> Your score is.....</h1>
-		<hr>
-		<div id = "data"></div>
-
-
-		<button id= "newGame">Main menu</button>
-		
-	</div>
-
-
 </body>
 </html>
