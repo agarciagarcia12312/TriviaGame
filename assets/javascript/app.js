@@ -1,16 +1,21 @@
+// array of questions
 var questions = ["The average person does what thirteen times a day?", "What is Johnny Depp afraid of?", "what country has the tallest building in the world" ,
 "In Kansas it's illegal to eat cherry pie with what?", "How tall am I?"];
+// question choices
 var q1 = ["bathroom", "laughs", "farts", "eats"];
 var q2 = ["spiders", "clowns", "flowers","elephants"];
 var q3 = ["U.A.E", "United States", "China", "Japan"];
 var q4 = ["Apples","Honey", "Milk", "Ice Cream"]
 var q5 = ["5'8", "6'4", "6'1", "5'3" ]
 var qs = [q1, q2, q3, q4, q5];
+// answer key
 var answers = [1,1,0,3,2]
 var guess = 0;
+// initial time
 var time = 15;
 // below q varible that tracks how many question have been created
 // var q = 0;
+// array of possible gifs
 var yesGif = ["assets/images/yes1.gif","assets/images/yes2.gif","assets/images/yes3.gif","assets/images/yes4.gif","assets/images/yes.gif"]
 var noGif = ["assets/images/no1.gif","assets/images/no2.gif","assets/images/no3.gif","assets/images/no4.gif","assets/images/no5.gif"]
 
